@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sowmya | Frontend Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h2 class="logo">Juturu Sowmya</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="reveal">Hi, I’m <span>Sowmya</span></h1>
+      <p class="reveal delay">
+        Frontend Developer crafting clean & interactive web experiences.
+      </p>
+    </div>
+    <div class="floating-shapes"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <img src="assets/profile.jpeg" alt="Profile" class="profile-img"/>
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate frontend developer with a strong eye for UI,
+        animations, and user experience. I love turning ideas into
+        beautiful interfaces.
+      </p>
+      <ul class="facts">
+        <li>💻 MERN Stack</li>
+        <li>🌍 Languages: English, Telugu</li>
+        <li>🎯 UI & Motion Design Lover</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="assets/gallery5.png" onclick="openLightbox(this.src)" />
+      <img src="assets/gallery2.png" onclick="openLightbox(this.src)" />
+      <img src="assets/gallery3.png" onclick="openLightbox(this.src)" />
+      <img src="assets/gallery4.png" onclick="openLightbox(this.src)" />
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img"/>
+  </div>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+
+    <p>Email: jsowmya663@gmail.com</p>
+    <p>phoneNo:8919646126</p>
+    <a class="resume" href="https://drive.google.com/file/d/1VMR-nY386TsjW0j0OzN4sVOKkK9l8sO4/view?usp=drive_link" download>Download Resume</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
